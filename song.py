@@ -8,6 +8,12 @@ class Song():
         return str(self.__dict__)
 
     def __eq__(self, other):
-        print(self.__dict__)
-        print(other.__dict__)
         return self.__dict__ == other.__dict__
+
+    def show(self):
+        print('Author: %s' % self.author)
+        print('Title: %s' % self.title)
+
+        for stanza in self.stanzas:
+            print('\n%s' % '\n'.join(stanza))
+
