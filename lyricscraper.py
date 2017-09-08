@@ -3,7 +3,7 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 from song import Song
 
-class LyricsSpider(scrapy.Spider):
+class LyricScraper(scrapy.Spider):
     name = "Letras.com"
     songs = []
 
@@ -22,6 +22,6 @@ class LyricsSpider(scrapy.Spider):
         process = CrawlerProcess({
             'USER_AGENT': config.user_agent
         })
-        process.crawl(LyricsSpider, urls=set(urls))
+        process.crawl(LyricScraper, urls=set(urls))
         process.start()
         return self.songs
