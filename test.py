@@ -1,5 +1,5 @@
 import unittest
-from samplesongs import songs
+from testdata import songs
 from lyricsscraper import LyricsScraper
 
 class lyric_test(unittest.TestCase):

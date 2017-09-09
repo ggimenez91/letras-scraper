@@ -5,7 +5,7 @@ songs = [(
         author='Buenos Muchachos',
         title='He Never Wants To See You (once Again)',
         link='https://www.letras.com/buenos-muchachos/530540/',
-        stanzas = [[
+        stanzas=[[
             'Por mas que digas y hables',
             'Hoy cagué',
             'Boludo y pelotudo',
