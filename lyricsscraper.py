@@ -19,7 +19,7 @@ class LyricsScraper(scrapy.Spider):
             response.css('article p')))
         self.songs.append(Song(author, title, response.url, stanzas))
 
-    def run(self, urls):
+    def get_songs(self, urls):
         process = CrawlerProcess({
             'USER_AGENT': config.user_agent
         })

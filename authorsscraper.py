@@ -25,7 +25,7 @@ class AuthorScraper(scrapy.Spider):
                     Song(author_name, title, config.page_url + link, None))
         self.authors.append(author)
 
-    def run(self, urls):
+    def get_authors(self, urls):
         process = CrawlerProcess({
             'USER_AGENT': config.user_agent
         })

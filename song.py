@@ -12,7 +12,7 @@ class Song():
         result = 'Author: {0}\nTitle: {1}\nLink: {2}\n'.format(self.author,
                 self.title, self.link)
         for stanza in self.stanzas:
-            result =+ '\n{0}'.format('\n'.join(stanza))
+            result += '\n{0}\n'.format('\n'.join(stanza))
         return result
 
     def __eq__(self, other):
