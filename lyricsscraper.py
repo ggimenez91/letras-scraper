@@ -17,7 +17,7 @@ class LyricsScraper(scrapy.Spider):
         title =  response.css('h1::text').extract_first()
         stanzas = list(map(lambda x: x.css('p::text').extract(),
             response.css('article p')))
-        self.songs.append(Song(author, title, stanzas))
+        self.songs.append(Song(author, title, response.url, stanzas))
 
     def run(self, urls):
         process = CrawlerProcess({

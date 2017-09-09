@@ -1,11 +1,11 @@
 from song import Song
 
 songs = [(
-    'https://www.letras.com/buenos-muchachos/530540/',
     Song(
-        'Buenos Muchachos',
-        'He Never Wants To See You (once Again)',
-        [[
+        author='Buenos Muchachos',
+        title='He Never Wants To See You (once Again)',
+        link='https://www.letras.com/buenos-muchachos/530540/',
+        stanzas = [[
             'Por mas que digas y hables',
             'Hoy cagué',
             'Boludo y pelotudo',
