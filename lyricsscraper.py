@@ -4,6 +4,7 @@ from scrapy.crawler import CrawlerProcess
 from song import Song
 
 class LyricsScraper(scrapy.Spider):
+    """ Allows getting the detailed info of each song """
     name = "Letras.com"
     songs = []
 
